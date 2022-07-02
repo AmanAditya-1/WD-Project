@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href=
+        "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+        <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+        <title>LearnX</title>
+        <style>
+            body{
+                margin: 0px;
+                padding: 0px;
+                padding-top: 8px;
+                width: 100%;
+            }
+            .maincontent{
+                background-image: url('bg.jpg');
+                background-size: cover;
+                background-attachment: fixed;
+                /* background-color: black; */
+                /* background-size: 1300px 610px; */
+                background-repeat: no-repeat;
+                padding:20px;
+                padding-left: 40px;
+                height: 561px;
+            }
+            .heading{
+                color: white;
+                font-family: 'Cantarell', sans-serif;
+               margin-bottom: 25px;
+               padding-bottom: 10px;;
+            }
+            #lea{
+                font-size: 150px;
+                font-weight: bold;
+                margin-top:-10px;
+                margin-bottom: 10px;
+            }
+            #wel{
+                font-size: 50px;
+                font-weight: 600;
+                margin-top: 65px;
+                margin-bottom: 2px;
+            }
+            .navbar ul{
+                color: white;
+                font-family: 'Cantarell', sans-serif;
+                font-size: x-large;
+                font-weight: bold;
+                height: 46px;
+                width: 100%;
+                margin:0px;
+                padding:0px;
+               padding-top:15px;
+            
+            }
+            .navbar li{
+                list-style: none;
+                float: left;
+            }
+            .log{
+                font-family: 'Cantarell', sans-serif;
+                font-weight: 600;
+                border:none;
+                padding:6px;
+                float: right;
+                font-size: x-large;
+                margin-left: 245px;
+                margin-right: 10px;
+                background-color: white;
+                color: brown;
+                border-radius: 3px;
+                margin-top: -5px;
+                
+            }
+            .sign{
+                font-family: 'Cantarell', sans-serif;
+                font-weight: 600;
+                border:none;
+                color: brown;
+                background-color: white;
+                padding:6px;
+                float: right;
+                font-size: x-large;
+                margin-left:8px;
+                border-radius: 3px;
+                margin-top: -5px;
+            }
+            .sign:hover,.log:hover{
+                background-color: brown;
+                color: white;
+                border:2px solid white;
+            }
+            .navbar li a{
+                text-decoration: none;
+                color: white;
+            }
+            #sig{
+                
+                margin-right:0px;
+            }
+            .options li{
+                margin-right:40px;
+                position: relative;
+                padding-bottom: 20px;
+            }
+            .options li a{
+                padding-bottom: 2px;
+            }
+            .options li:hover> a{
+                
+                border-bottom:2px solid white;
+                font-size: 25px;
+                transition: all 0.2s linear;
+            }
+            
+            .form{
+                width:310px;
+                height:295px;
+                padding:30px 20px;
+                padding-top: 20px;
+                background-color: white;
+                border-radius: 10px;
+                margin-top: 110px;
+            }
+            .form input{
+                margin:15px 20px;
+                width: 250px;
+                height: 30px;
+                border: none;
+                border-bottom: 2px solid black;
+                /* border-radius: 5px; */
+                padding-left: 10px;
+                font-size: 18px;
+            }
+            .form input:hover{
+                border-bottom: 2px solid brown;
+            }
+            .form input:focus{
+                outline: none;
+                border-color:brown;
+            }
+            .form p{
+                text-align: center;
+                font-family: 'Ubuntu', sans-serif;
+                font-size: xx-large;
+                color: brown;
+                margin-bottom: 5px;
+                margin-top: 5px;
+            }
+            #logbtn{
+                text-align: center;
+                font-family: 'Ubuntu', sans-serif;
+                font-size: x-large;
+                background-color: brown;
+                color: white;
+                border:none;
+                border-radius: 5px;
+                padding:5px 70px;
+                margin-left: 40px;
+                margin-top: 20px;
+            }
+            #logbtn:hover{
+                background-color: white;
+                color: brown;
+                border:2px solid brown;
+                border-radius: 5px;
+            }
+            #sigbtn{
+                text-align: center;
+                font-family: 'Ubuntu', sans-serif;
+                font-size: x-large;
+                background-color: brown;
+                color: white;
+                border:none;
+                border-radius: 5px;
+                padding:5px 70px;
+                margin-left: 40px;
+                margin-top: 20px;
+            }
+            #sigbtn:hover{
+                background-color: white;
+                color: brown;
+                border:2px solid brown;
+                border-radius: 5px;
+            }
+            .middle{
+                display: flex;
+                gap: 152px;
+                padding-top: 15px;
+                width: 100%;
+            }
+            .content{
+                color: white;
+                font-size: 27px;
+                width:616px;
+                font-family: 'Exo 2', sans-serif;
+                padding-top:0px;
+                margin-top:-220px;
+                display: block;
+            }
+            #createAccount{
+                height: 360px;
+                z-index: -5px;
+                margin-left: -502px;
+                visibility: hidden;
+            }
+            .drpdwn ul, .drpdwn2 ul{
+                position: absolute;
+            }
+            .drpdwn ul li{
+                background-color: white;
+                color: brown;
+                margin: 0px;
+                padding: 10px 7px;  
+                border-bottom: 2px solid brown; 
+                width: 240px;   
+                font-size: 21px;
+            }
+            .drpdwn2 ul li{
+                background-color: white;
+                color: brown;
+                margin: 0px;
+                padding: 10px 7px;  
+                border-bottom: 2px solid brown; 
+                width: 150px;   
+                font-size: 21px;
+            }
+            .drpdwn ul li:hover, .drpdwn2 ul li:hover{
+                background-color: rgba(184, 56, 56, 1);
+                color: white;
+                font-size: 22px;
+                border: none;
+            }
+            .navbar ul li ul{
+                display: none;
+            }
+            .navbar ul li:hover ul{
+                display: block;
+            }
+            .navbar{
+                background-color: rgba(174, 47, 47);
+                margin: 0px;
+                padding: 0px;
+                padding-left: 50px;
+                width: 100%;
+                margin-left: -49px;
+                padding-right: 55px;
+                margin-top: -28px;
+                position: fixed;
+            }
+            #icon{
+               font-size: 40px;
+               text-decoration: none;
+               color: rgb(12, 164, 252);
+               margin-top: 15px;
+            }
+            #otherlog{
+                font-size: 12px;
+                text-align: center;
+                margin-left: -5px;
+                margin-top: 13px;
+                margin-bottom: 13px;
+                color: gray;
+
+            }
+            .sociallogin i{
+                font-size: 35px;
+                margin-right: 30px;
+                color: black;
+            }
+            .sociallogin i:hover{
+                color: brown;
+            }
+            .sociallogin{
+                margin-left: 76px;
+            }
+            .intro{
+                background-color: black;
+                width: 98.4%;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                padding-left: 20px;
+                font-family: 'Play', sans-serif;
+                color: white;
+                font-size: 23px;
+                height: 350px;
+                /* border-top: 5px solid aquamarine; */
+                border-top: 5px solid rgb(255, 26, 26);
+            }
+            .pic{
+                width:200px;
+                height: 200px;
+                border-radius: 50%;
+                border: 10px ridge rgb(58, 255, 219);
+                /* border: 10px ridge rgb(255, 26, 26); */
+                padding:5px;
+            }
+            .info{
+                display: flex;
+                gap: 50px;
+            }
+            #logo{
+                color: red ;
+                font-size: 20px;
+                margin-left: 3px;
+                margin-right: 3px;
+            }
+            #extro{
+               text-align: center;
+               margin-top: 35px;
+               font-size: 25px;
+            }
+            #connecticon1{
+                margin-left: 15px;
+                font-size: 30px;
+                color: white;
+            }
+            #connecticon2,#connecticon3,#connecticon4,#connecticon5{
+                margin-left: 20px;
+                font-size: 30px;
+                color: white;
+            }
+            #connecticon1:hover,#connecticon2:hover,#connecticon3:hover,#connecticon4:hover,#connecticon5:hover{
+                color: aquamarine;
+            }
+            #headinglast{
+                text-align: center;
+                margin: 0px;
+                padding: 0px;
+                font-family: 'Russo One', sans-serif;
+                font-size: 32px;
+                margin-bottom: 15px;
+                color: aquamarine;
+            }
+            </style>
+           
+    </head>
+    <body>
+        <div class="maincontent">
+            <div class="navbar">
+            <nav >
+                <ul>
+                    <div class="options">
+                        <li><a href="#">HOME</a></li>
+                        <li id="course"><a href="javascript:void(0)" >COURSES</a>
+                        <div class="drpdwn">
+                            <ul id="menu">
+                                <a href="https://www.udemy.com/courses/search/?src=ukw&q=web+devlopment" target="_blank" ><li>Web Devlopment</li></a>
+                                <a href="https://www.udemy.com/courses/search/?src=ukw&q=android+devlopment" target="_blank" ><li>Android Devlopment</li></a>
+                                <a href="https://www.edx.org/search?q=ios+devlopment" target="_blank" ><li>iOS Devlopment</li></a>
+                                <a href="https://www.edx.org/search?q=programming" target="_blank" ><li>Programming</li></a>
+                                <a href="https://www.edx.org/search?q=blockchain" target="_blank" ><li>Blockchain</li></a>
+                                <a href="https://www.udemy.com/courses/search/?src=ukw&q=ui%2Fux" target="_blank" ><li>UI/UX</li></a>
+                                <a href="https://www.edx.org/search?q=artificial+intelligence" target="_blank" ><li>Artificial Intelligence</li></a>
+                                <a href="https://www.edx.org/search?q=machine+learning" target="_blank" ><li>Machine Learning</li></a>
+                                <a href="https://www.edx.org/search?q=deep+learning" target="_blank" ><li style="border: none;">Deep Learning</li></a>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="javascript:void(0)">TUTORIALS</a>
+                    <div class="drpdwn2">
+                        <ul>
+                            <a href="https://www.youtube.com/results?search_query=html+tutotials" target="_blank"><li>HTML</li></a>
+                            <a href="https://www.youtube.com/results?search_query=css+tutotials" target="_blank"><li>CSS</li></a>
+                            <a href="https://www.youtube.com/results?search_query=javascript+tutotials" target="_blank"><li>JavaScript</li></a>
+                            <a href="https://www.youtube.com/results?search_query=c+tutotials" target="_blank"><li>C</li></a>
+                            <a href="https://www.youtube.com/results?search_query=c%2B%2B+tutotials" target="_blank"><li>C ++</li></a>
+                            <a href="https://www.youtube.com/results?search_query=java+tutotials" target="_blank"><li>JAVA</li></a>
+                            <a href="https://www.youtube.com/results?search_query=python+tutotials" target="_blank"><li>Python</li></a>
+                            <a href="https://www.youtube.com/results?search_query=php+tutotials" target="_blank"><li>PHP</li></a>
+                            <a href="https://www.youtube.com/results?search_query=jQuery+tutotials" target="_blank"><li style="border: none;">jQuery</li></a>
+                        </ul>
+                    </div>
+                    </li>
+                    <li><a href="javascript:void(0)">CONTACT US</a>
+                        <div class="drpdwn2">
+                            <ul>
+                                <li>Call</li>
+                                <a href="https://www.linkedin.com/in/aman-aditya-a30a4922a/" target="_blank"><li>Chat</li></a>
+                                <a href="mailto:itsasr9@gmail.com" ><li style="border: none;">Email</li></a>
+                            </ul>
+                        </div>
+                    </li>
+                    </div>
+                    <li><a href="#" ><button onclick="login()" class="log">LOG IN</button></a></li>
+                    <li><a href="#"><button onclick="signup()" class="sign">SIGN UP</button></a></li>
+                </ul>
+                </nav>
+            </div>
+            <div class="middle">
+            <header class="heading">
+            <p id="wel">WELCOME TO</p>
+            <p id="lea">LEARNX</p>
+            </header>
+            <form class="form" id="login" autocomplete="off" >
+                <p>LOGIN</p>
+                <input type="text" name="email" placeholder="Email"><br>
+                <input type="password" name="password" placeholder="Password"><br>
+                <button type="submit" class="sub" id="logbtn">LOG IN</button><br>
+                <p id="otherlog">OR LOGIN WITH</p>
+                <div class="sociallogin">
+                    <a href="https://accounts.google.com/signin/v2/identifier?service=accountsettings&continue=https%3A%2F%2Fmyaccount.google.com%2F%3Ftab%3Dkk&ec=GAlAwAE&flowName=GlifWebSignIn&flowEntry=AddSession" target="_blank" ><i class="fa fa-google" aria-hidden="true"></i></a>
+                    <a href="https://github.com/login" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                    <a href="https://www.facebook.com/login/" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                </div>
+                
+                
+            </form>
+            <form class="form" id="createAccount" autocomplete="off">
+                <p>SIGNUP</p>
+                <input type="text" name="name" placeholder="Name">
+                <input type="text" name="email" placeholder="Email">
+                <input type="password" name="password" placeholder="Create Password">
+                <button type="submit" class="sub" id="sigbtn">SIGN UP</button>
+                <p id="otherlog">OR SIGNUP WITH</p>
+                <div class="sociallogin">
+                    <a href="https://accounts.google.com/signin/v2/identifier?service=accountsettings&continue=https%3A%2F%2Fmyaccount.google.com%2F%3Ftab%3Dkk&ec=GAlAwAE&flowName=GlifWebSignIn&flowEntry=AddSession" target="_blank" ><i class="fa fa-google" aria-hidden="true"></i></a>
+                    <a href="https://github.com/login" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                    <a href="https://www.facebook.com/login/" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                </div>
+            </form>
+            </div>
+            <div class="content">
+                <p style=" padding-top:0px; margin-top:0px;">At <b>LEARNX</b>, we are dedicated to provide you with quality courses, tutorial and mentorship. Acquire the skills of your interest and get a <b>job</b> real quick.</p>
+            </div>
+            </div>
+            <div class="intro">
+                <p id="headinglast">ABOUT ME</p>
+                <div class="info">
+                    <img class="pic" src="avatar.png">
+                    <p>Hello everyone, My name is <b>Aman Aditya</b> and I am a CSE undergrad at Indian Institute of<br> Information Technology, Sonepat. I have created this webpage using HTML, CSS and<br> JavaScript. This website is created with the sole purpose of providing quality courses and<br> tutorials, free of cost. I hope you all will learn something new here. Thanks a lot for visiting<br> my website.<br><br>
+                        Connect with me on : 
+                        <a href="https://www.linkedin.com/in/aman-aditya-a30a4922a/" target="_blank"><i id="connecticon1" class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        <a href="https://github.com/AmanAditya-1" target="_blank"><i id="connecticon2" class="fa fa-github" aria-hidden="true"></i></a>
+                        <a href="https://www.facebook.com/login/" target="_blank"><i id="connecticon3" class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                        <a href="https://twitter.com/i/flow/login" target="_blank"><i id="connecticon4" class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="https://www.instagram.com/accounts/login/" target="_blank"><i id="connecticon5" class="fa fa-instagram" aria-hidden="true"></i></a>
+                        </p>
+                </div>
+                <div>
+                    <p id="extro">Made with <i id="logo" class="fa fa-heart" aria-hidden="true"></i> by Aman</p>
+                </div>
+            </div>
+            <script>
+                var x= document.getElementById("login");
+                var y= document.getElementById("createAccount");
+                
+                function signup(){
+                    y.style.visibility="visible";
+                    x.style.visibility="hidden";
+                }
+                function login(){
+                    y.style.visibility="hidden";
+                    x.style.visibility="visible";
+                }
+            </script>
+    </body>
+</html>
