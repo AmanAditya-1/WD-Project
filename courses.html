@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cantarell&display=swap" rel="stylesheet">
+    <title>Courses</title>
+    <style>
+        body{
+            background-image: url("bg.jpg");
+            background-size: cover;
+            font-family: 'Cantarell', sans-serif;
+        }
+        .firstline,.secondline,.thirdline{
+            display: flex;
+        }
+        ul{
+            padding: 0px;
+            margin: 0px;
+            margin-left: 4%;
+            margin-right: 4%;
+        }
+        a{
+            list-style: none;
+            border: 5px solid rgb(3, 190, 190);
+            width: 22%;
+            margin: 10px;
+            padding:4% 0px;
+            text-align: center;
+            background-color: rgb(189, 5, 5);
+            color: white;
+            font-size: xx-large;
+            border-radius: 30px;
+            text-decoration: none;
+        }
+        a:hover{
+            background-color: rgb(211, 9, 9);
+        }
+        #heading{
+            color: white;
+            font-size: 40px;
+            border-bottom: 3px solid aqua;
+            width:210px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h2 id="heading">COURSES</h2>
+    <ul>
+        <div class="firstline">
+            <a href="https://www.udemy.com/courses/search/?src=ukw&q=web+devlopment" target="_blank" ><li>Web Devlopment</li></a>
+            <a href="https://www.udemy.com/courses/search/?src=ukw&q=android+devlopment" target="_blank" ><li>Android Devlopment</li></a>
+            <a href="https://www.edx.org/search?q=ios+devlopment" target="_blank" ><li>iOS &nbsp; Devlopment</li></a>
+            <a href="https://www.edx.org/search?q=programming" target="_blank" ><li>Programming</li></a>
+        </div>
+        <div class="secondline">
+
+            <a href="https://www.edx.org/search?q=blockchain" target="_blank" ><li>Blockchain</li></a>
+            <a href="https://www.udemy.com/courses/search/?src=ukw&q=ui%2Fux" target="_blank" ><li>UI/UX</li></a>
+            <a href="https://www.edx.org/search?q=artificial+intelligence" target="_blank" ><li>Artificial Intelligence</li></a>
+            <a href="https://www.edx.org/search?q=machine+learning" target="_blank" ><li>Machine Learning</li></a>
+        </div>
+        <div class="thirdline">
+            <a style="margin-left: 38.5%;" href="https://www.edx.org/search?q=deep+learning" target="_blank" ><li style="border: none;">Deep <br>Learning</li></a>
+        </div>
+    </ul>
+</body>
+</html>
